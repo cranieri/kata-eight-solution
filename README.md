@@ -17,13 +17,15 @@ The above command will print out the matches from the file WordList.txt, after e
 
 
 ```ruby
-ruby kata_extendible.rb
+ruby kata_extendible.rb 6
 ```
-The above command will call both the readable and fast version of the solution.
-The extendable version leverages the Strategy pattern, so that in the future any possible matcher can be added,
-with no need to modify the Matcher class
+The above command will call both the extendible version of the solution.
+The extendible version gives the chance to specify a number of letters you want the word to be composed of.
 
-
+```ruby
+ruby kata_matcher.rb
+```
+Will run the readable, fast version and show how to dinamically change 'match finder', by leveraging the Matcher class.
 
 ## Supported Ruby Versions
 This library aims to support and is [tested against][travis] the following Ruby
