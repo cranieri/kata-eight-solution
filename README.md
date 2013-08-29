@@ -17,7 +17,7 @@ The above command will print out the matches from the file WordList.txt, after e
 
 
 ```ruby
-ruby kata_extendable.rb
+ruby kata_extendible.rb
 ```
 The above command will call both the readable and fast version of the solution.
 The extendable version leverages the Strategy pattern, so that in the future any possible matcher can be added,
