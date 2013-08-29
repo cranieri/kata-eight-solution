@@ -1,7 +1,7 @@
 #Ruby Solution for the Kata Eight problem
 
 ## Quick Start Guide
-A simpel solution for kata eight problem  (http://codekata.pragprog.com/2007/01/kata_eight_conf.html)
+A simple solution for the kata eight problem  (http://codekata.pragprog.com/2007/01/kata_eight_conf.html)
 
 ```ruby
 ruby kata_fast.rb
