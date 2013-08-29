@@ -1,25 +1,15 @@
 #!/usr/bin/env ruby
 $LOAD_PATH << File.join(File.dirname(__FILE__), '', 'lib')
-require 'matcher'
-require 'kata_fast'
-require 'kata_readable'
 
-p "Kata extendable"
+require 'kata_extendible'
 
 start_time = Time.now
 
-p "Calling the faster version..."
-ke = Matcher.new(KataFast.new)
-matches = ke.find_matches
+num_of_words = ARGV[0] ?  ARGV[0].to_i : 6
 
+k = KataExtendible.new(num_of_words)
+matches = k.find_matches
+tot_matches = matches ? matches.size : 0
 
-puts "We found a total of #{matches.size} matches"
-puts "Running time: #{Time.now - start_time} seconds"
-
-p "Calling the readable version..."
-
-
-ke.matcher = KataReadable.new
-matches = ke.find_matches
-puts "We found a total of #{matches.size} matches"
+puts "We found a total of #{tot_matches} matches with #{num_of_words} words"
 puts "Running time: #{Time.now - start_time} seconds"
