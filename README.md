@@ -1,4 +1,4 @@
-#Library to create a multiplication table of prime numbers
+#Ruby Solution for the Kata Eight problem
 
 ## Quick Start Guide
 A simpel solution for kata eight problem  (http://codekata.pragprog.com/2007/01/kata_eight_conf.html)
