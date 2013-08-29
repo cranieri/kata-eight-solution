@@ -19,7 +19,7 @@ The above command will print out the matches from the file WordList.txt, after e
 ```ruby
 ruby kata_extendible.rb 6
 ```
-The above command will call both the extendible version of the solution.
+The above command will call the extendible version of the solution.
 The extendible version gives the chance to specify a number of letters you want the word to be composed of.
 
 ```ruby
